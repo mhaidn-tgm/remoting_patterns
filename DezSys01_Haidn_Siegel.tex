@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{listings}
+\usepackage{cite}
 \usepackage{glossaries}
 \usepackage[
 top    = 2.75cm,
@@ -58,6 +59,7 @@ konstruktive Verbesserungsvorschläge / Kritikpunkte ... 6Pkt\\
 
 \newpage
 \section{Einleitung}
+\subsection{Allgemein}
 Design Patterns haben in den letzten Jahren eine bedeutende Rolle in der objektorientierten\\
 Softwareentwicklung bekommen.\\
 Ein Pattern ist mit einer Drei-Punkte-Regel zu vergleichen und setzt sich aus den folgenden Komponenten zusammen:
@@ -67,7 +69,25 @@ Ein Pattern ist mit einer Drei-Punkte-Regel zu vergleichen und setzt sich aus de
 	\item Lösung
 \end{itemize}
 Ziel und Nutzen eines Patterns soll es sein Software zu entwickeln, der es möglich ist sich soweit selbst zu konfigurieren,
-dass interne Prozesse auf ein sich änderndes Umfeld angepasst und optimiert werden können.
+dass interne Prozesse auf ein sich änderndes Umfeld angepasst und optimiert werden können.\\
+\subsection{Verteilte Systeme}
+Im gebiet der verteilten Systeme kommen allerdings ein paar weiterte Herausforderungen auf uns zu.\\
+Folgenden Herausforderungen schenken wir hierbei unser Augenmerk:
+\begin{itemize}
+	\item Network Latency
+	\item Predictability
+	\item Concurrency
+	\item Scalability
+	\item Partial Failure
+\end{itemize}
+\begin{center}
+	\includegraphics[scale=0.4]{img/remoting_patterns.png}
+\end{center}
+Die dick gedruckten Knotenpunkte in der obigen Grafik, beschreiben bereits unsere Remoting Patterns.\\
+Im Zuge dieser Übung haben wir uns mit dem LeelaApplikation-Framework auseinandergesetzt und den Code auf Basic Remoting Patterns untersucht.\\
+Eine detailierte Übersicht folgt im nächsten Punkt.
+\cite{RP-WU-Wien}
+\newpage
 \section{UML}
 	\subsection{comm}
 	\subsection{comm.socket}
@@ -76,5 +96,9 @@ dass interne Prozesse auf ein sich änderndes Umfeld angepasst und optimiert wer
 	\subsection{evs2009.mapping}
 \section{Testfälle}
 \section{Kritik und verbesserungsvorschläge}
+
+\newpage
+\bibliography{sources}{}
+\bibliographystyle{alpha}
 		
 \end{document}
