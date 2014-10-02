@@ -1,5 +1,4 @@
 \documentclass[a4paper]{article}
-
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
@@ -22,7 +21,60 @@ right  = 2.00cm]{geometry}
 \begin{document}
 \maketitle
 \newpage
+
 \tableofcontents
 \newpage
+
+\section{Aufgabenstellung}
+Gruppenarbeit: 2 Mitglieder (Server/Client)\\
+\\
+Analysieren Sie in einer Gruppe von 2 Leuten die mitgelieferte Implementation der verteilten LeelaApplikation. Identifizieren Sie dabei alle verwendeten Elemente der "Basic Remoting Patterns" und erstellen Sie UML-Klassendiagramme für die Pakete comm, comm.socket, comm.soap, evs2009 und evs2009.mapping.\\
+Schließen Sie die unfertigen Tests ab, und dokumentieren Sie etwaige Schwierigkeiten.\\
+\\
+\textbf{Was ist zu tun?}
+\begin{itemize}
+	\item UML Klassendiagramm
+	\item Erweitern der Testfälle (mind. einen Testfall erweitern)
+	\item Kritik und Verbesserungsvorschläge
+\end{itemize}
+\mbox{} \\
+\textbf{Punkte (16):}\\
+Identifikation von Basic Remoting Patterns ... 1Pkt\\
+Beschreibung der Applikation ... 4Pkt\\
+UML-Diagramme ... 3Pkt\\
+Schreiben von einem neuen Testfall ... 2Pkt\\
+konstruktive Verbesserungsvorschläge / Kritikpunkte ... 6Pkt\\
+\\
+\textbf{Main-Method-Classes}\\
+\begin{center}
+	\begin{tabular}{ | r | r |}
+		\hline
+		SOAPPluginServer & src/main/java/comm/soap/SOAPPluginServer.java \\
+		\hline
+		Application & src/main/java/evs2009/Application.java \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\newpage
+\section{Einleitung}
+Design Patterns haben in den letzten Jahren eine bedeutende Rolle in der objektorientierten\\
+Softwareentwicklung bekommen.\\
+Ein Pattern ist mit einer Drei-Punkte-Regel zu vergleichen und setzt sich aus den folgenden Komponenten zusammen:
+\begin{itemize}
+	\item Kontext
+	\item Problem
+	\item Lösung
+\end{itemize}
+Ziel und Nutzen eines Patterns soll es sein Software zu entwickeln, der es möglich ist sich soweit selbst zu konfigurieren,
+dass interne Prozesse auf ein sich änderndes Umfeld angepasst und optimiert werden können.
+\section{UML}
+	\subsection{comm}
+	\subsection{comm.socket}
+	\subsection{comm.soap}
+	\subsection{evs2009}
+	\subsection{evs2009.mapping}
+\section{Testfälle}
+\section{Kritik und verbesserungsvorschläge}
 		
 \end{document}
